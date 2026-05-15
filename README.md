@@ -26,4 +26,5 @@ For this database, it was made with the intention of provided the best amount of
 - subjects table
 - samples table
 - cell counts table
+
 Overall, this design serves to help prevent duplicated data and simplify the processes of addition of new information within the database--where it is possible that new subjects, samples, treatments, etc. could be added to the database and thereby this separation helps to make the database as scalable as possible. So, through this relational databse, it can also open the floor for data analysis such as treatment comparisons, subgroup filtering, tracking of subject(s) over a long period of time, etc.
