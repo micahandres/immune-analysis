@@ -34,7 +34,9 @@ make dashboard
 For the statistical analysis on comparing the cell relative frequencies between those who were responders and non-responders, I used the two sample t-test with a signficance threshold of p < 0.05. This t-test was used because the two sample t-test is best used to identify the mean averages between two different groups; thereby, this specific test suited the amount of groups in the problem. So, this test allowed for a statistically-backed reasoning for observing if there were any significant differences in the immune cell population percentages between the two groups.
 
 ## Thought Process Behind Database Design 
-For this database, it was made with the intention of provided the best amount of scalability for future projects, samples, and new analytics needed to be performed in the future. For example, if there was a new treatment that was going to be added to the database, then the treatment can be added simply by extended the treatments table and so forth; so, this same purpose was implemented in order to efficiently separate the information for best scalability. The eight tables created were:
+For this database, it was made with the intention of provided the best amount of scalability for future projects, samples, and new analytics needed to be performed in the future. For example, if there were new treatments or projects that would need to be added in the future, then they could easily be inserted in their respective tables. Ulimately, this database design was created with the intention to prevent the constant restructuring of the databse and be suited best for scalability going forward.
+
+The eight relational tables created through SQLite were:
 - projects table
 - conditions table
 - treatments table
@@ -44,7 +46,7 @@ For this database, it was made with the intention of provided the best amount of
 - samples table
 - cell counts table
 
-Overall, this design serves to help prevent duplicated data and simplify the processes of addition of new information within the database--where it is possible that new subjects, samples, treatments, etc. could be added to the database and thereby this separation helps to make the database as scalable as possible. So, through this relational databse, it can also open the floor for data analysis such as treatment comparisons, subgroup filtering, tracking of subject(s) over a long period of time, etc.
+This design reduces the amount of duplicated data, simplifies the amount of filtering, and improves the scalability of the datasets for future information. 
 
 ## Link to dashboard
 Here is a public link to the dashboard!
