@@ -23,9 +23,12 @@ To run this pipeline, please run the following commands in order
 make setup
 make pipeline
 make dashboard
+```
+
 - `make setup` = this installs all the necessary dependencies
 - `make pipeline` = creates the database and runs all the necessary statistical analysis
 - `make dashboard` = opens the streamlit dashboard 
+
 
 ## Statistical Analysis (Part 3)
 For the statistical analysis on comparing the cell relative frequencies between those who were responders and non-responders, I used the two sample t-test with a signficance threshold of p < 0.05. This t-test was used because the two sample t-test is best used to identify the mean averages between two different groups; thereby, this specific test suited the amount of groups in the problem. So, this test allowed for a statistically-backed reasoning for observing if there were any significant differences in the immune cell population percentages between the two groups.
@@ -44,3 +47,5 @@ For this database, it was made with the intention of provided the best amount of
 Overall, this design serves to help prevent duplicated data and simplify the processes of addition of new information within the database--where it is possible that new subjects, samples, treatments, etc. could be added to the database and thereby this separation helps to make the database as scalable as possible. So, through this relational databse, it can also open the floor for data analysis such as treatment comparisons, subgroup filtering, tracking of subject(s) over a long period of time, etc.
 
 ## Link to dashboard
+Here is a public link to the dashboard!
+https://immune-analysis-4vtv55pqryddtku5mga3kh.streamlit.app/
