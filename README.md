@@ -33,7 +33,7 @@ make dashboard
 ## Statistical Analysis (Part 3)
 For the statistical analysis on comparing the cell relative frequencies between those who were responders and non-responders, I used the two sample t-test with a signficance threshold of p < 0.05. This t-test was used because the two sample t-test is best used to identify the mean averages between two different groups; thereby, this specific test suited the amount of groups in the problem. So, this test allowed for a statistically-backed reasoning for observing if there were any significant differences in the immune cell population percentages between the two groups.
 
-## Thought Process Behind Database Design 
+## Thought Process Behind Database Design / Code Structure 
 For this database, it was made with the intention of provided the best amount of scalability for future projects, samples, and new analytics needed to be performed in the future. For example, if there were new treatments or projects that would need to be added in the future, then they could easily be inserted in their respective tables. Ulimately, this database design was created with the intention to prevent the constant restructuring of the databse and be suited best for scalability going forward.
 
 The eight relational tables created through SQLite were:
@@ -46,8 +46,12 @@ The eight relational tables created through SQLite were:
 - samples table
 - cell counts table
 
-This design reduces the amount of duplicated data, simplifies the amount of filtering, and improves the scalability of the datasets for future information. 
+This design reduces the amount of duplicated data, simplifies the amount of filtering, and improves the scalability of the datasets for future information. Finally, with this schema, some types of analysis I would be eager to perform is:
+- identifying and comparing how different treatments can shift the immune cell populations
+- implementing a longitudinal study tracking how a subject's immune system changes over the treatment period/multiple clinical treatments
+- comparing how different treatments affect different genders and the minimum amount of dosage needed for different types of genders (ex: understanding how this affects a woman's period cycle, etc.)
+- developing predictive visualizations and models to compare and estimate immune response outcomes based on different treatments
 
-## Link to dashboard
+## Dashboard Link
 Here is a public link to the dashboard!
 https://immune-analysis-4vtv55pqryddtku5mga3kh.streamlit.app/
